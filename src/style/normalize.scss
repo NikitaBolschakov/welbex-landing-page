@@ -1,12 +1,14 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', 'Montserrat', sans-serif;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: $text-color;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

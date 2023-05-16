@@ -1,0 +1,72 @@
+.overlay {
+  z-index: -1;
+  background: #1e1e1e;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.glass {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+  backdrop-filter: blur(7.5px);
+  z-index: -1;
+}  
+
+.purple_light {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 258px;
+  top: 107px;
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
+} 
+
+.red_light {
+  position: absolute;
+  width: 211px;
+  height: 210px;
+  left: -55px;
+  top: 241px;
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
+} 
+
+.yellow_light {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -66px;
+  top: 519px;
+  background: #FCB045;
+  opacity: 0.4;
+  filter: blur(196px);
+  z-index: -1;
+}  
+
+.noise {
+  position: absolute;
+  background-image: url("../../vendors/images/bg-mobile.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+/*
+.purple_ball {
+
+}
+
+.red_ball {
+
+}
+
+.yellow_ball {
+
+} */

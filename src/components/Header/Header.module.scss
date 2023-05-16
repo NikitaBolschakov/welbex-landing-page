@@ -1,0 +1,23 @@
+.header {
+  min-width: 320px;
+  height: 55px;
+  background-color: #1e1e1e;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.item:hover {
+  opacity: 0.8;
+  transition: 0.1s;
+}
