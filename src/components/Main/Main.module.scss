@@ -1,15 +1,28 @@
 .main {
-  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
   min-height: 445px;
-  position: absolute;
+  position: relative;
+  border: 1px solid red;
+  margin: 0 auto 124px;
+}
+
+.main_cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
   font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
-  color: #e4e5ea;
-  padding: 40px 34px 15px 14px;
+  font-size: 48px;
+  line-height: 58px;
+  max-width: 362px;
   span {
     font-weight: 900;
     font-size: 36px;
@@ -23,18 +36,22 @@
 
 .subtitle {
   font-family: "Montserrat";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  padding: 0 34px 45px 14px;
+  padding-top: 30px;
+  max-width: 275px;
 }
 
 .list_title {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  padding: 0 34px 15px 14px;
+  text-align: right;
   letter-spacing: 0.01em;
+  max-width: 291px;
+  padding-bottom: 40px;
   span {
     background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
     -webkit-background-clip: text;
@@ -46,141 +63,226 @@
 .list {
   display: grid;
   grid-template-columns: auto auto;
-  row-gap: 10px;
-  column-gap: 0;
-  padding-left: 14px;
-  max-width: 290px;
+  row-gap: 30px;
+  column-gap: 30px;
+  max-width: 320px;
+  text-align: right;
+  margin-bottom: 60px;
 }
 
-.item {
-  position: relative;
-  
-}
-
-.item_text {
-  text-align: center;
-  padding-left: 15px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+.card_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.item_text:before {
-    display: block;                  
-    width: 10px;                    
-    content: '';                    
-    position: absolute;           
-    border-bottom: 1px solid white;  
+.card_subtitle {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button {
+  width: 262px;
+  height: 61px;
+  background: #4077f3;
+  margin:  0 auto 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .main {
+    min-width: 320px;
+    min-height: 445px;
+    position: absolute;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #e4e5ea;
+    padding: 40px 34px 15px 14px;
+    span {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 44px;
+      background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+        #e4e5ea;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .subtitle {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 34px 45px 14px;
+  }
+
+  .list_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 34px 15px 14px;
+    letter-spacing: 0.01em;
+    span {
+      background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+        #e4e5ea;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 0;
+    padding-left: 14px;
+    max-width: 290px;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .item_text {
+    text-align: center;
+    padding-left: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .item_text:before {
+    display: block;
+    width: 10px;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid white;
     top: 50%;
     border-image: linear-gradient(#fcb045, #ff3f78);
     border-image-slice: 1;
-}
+  }
 
-.overlay {
-  z-index: -1;
-  background: #1e1e1e;
-  position: relative;
-  width: 100vw;
-  min-height: 445px;
-}
+  .overlay {
+    z-index: -1;
+    background: #1e1e1e;
+    position: relative;
+    width: 100vw;
+    min-height: 445px;
+  }
 
-.glass {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    238.53% 189.02% at 3.2% 3.49%,
-    rgba(255, 246, 233, 0.1) 0%,
-    rgba(26, 29, 35, 0.1) 26.62%,
-    rgba(26, 29, 35, 0.1) 52.1%,
-    rgba(26, 29, 35, 0.01) 70.17%,
-    rgba(26, 29, 35, 0) 100%
-  );
-  backdrop-filter: blur(7.5px);
-  z-index: -1;
-}
+  .glass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      238.53% 189.02% at 3.2% 3.49%,
+      rgba(255, 246, 233, 0.1) 0%,
+      rgba(26, 29, 35, 0.1) 26.62%,
+      rgba(26, 29, 35, 0.1) 52.1%,
+      rgba(26, 29, 35, 0.01) 70.17%,
+      rgba(26, 29, 35, 0) 100%
+    );
+    backdrop-filter: blur(7.5px);
+    z-index: -1;
+  }
 
-.purple_light {
-  position: absolute;
-  width: 259px;
-  height: 259px;
-  left: 258px;
-  top: 107px;
-  background: #833ab4;
-  opacity: 0.5;
-  filter: blur(196px);
-  z-index: -1;
-}
+  .purple_light {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 258px;
+    top: 107px;
+    background: #833ab4;
+    opacity: 0.5;
+    filter: blur(196px);
+    z-index: -1;
+  }
 
-.red_light {
-  position: absolute;
-  width: 211px;
-  height: 210px;
-  left: -55px;
-  top: 241px;
-  background: #961a1a;
-  opacity: 0.5;
-  filter: blur(196px);
-  z-index: -1;
-}
+  .red_light {
+    position: absolute;
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 241px;
+    background: #961a1a;
+    opacity: 0.5;
+    filter: blur(196px);
+    z-index: -1;
+  }
 
-.yellow_light {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: -66px;
-  top: 519px;
-  background: #fcb045;
-  opacity: 0.4;
-  filter: blur(196px);
-  z-index: -1;
-}
+  .yellow_light {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -66px;
+    top: 519px;
+    background: #fcb045;
+    opacity: 0.4;
+    filter: blur(196px);
+    z-index: -1;
+  }
 
-.noise {
-  position: absolute;
-  background-image: url("../../vendors/images/bg-mobile.svg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-}
+  .noise {
+    position: absolute;
+    background-image: url("../../vendors/images/bg-mobile.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
 
-.red_ball {
-  position: absolute;
-  width: 43px;
-  height: 43px;
-  left: 29px;
-  top: 402px;
-  background: radial-gradient(
-    64% 64% at 27.25% 26.5%,
-    rgba(255, 208, 208, 0.536) 0%,
-    rgba(212, 93, 93, 0.264) 59.67%,
-    rgba(167, 49, 49, 0.248) 78.59%,
-    rgba(130, 25, 25, 0.248) 100%
-  );
-  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-  backdrop-filter: blur(2px);
-  border-radius: 50%;
-  filter: blur(5px);
-}
+  .red_ball {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: 29px;
+    top: 402px;
+    background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.536) 0%,
+      rgba(212, 93, 93, 0.264) 59.67%,
+      rgba(167, 49, 49, 0.248) 78.59%,
+      rgba(130, 25, 25, 0.248) 100%
+    );
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    filter: blur(5px);
+  }
 
-.yellow_ball {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 296px;
-  top: 236px;
-  background: radial-gradient(
+  .yellow_ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 296px;
+    top: 236px;
+    background: radial-gradient(
       64% 64% at 27.25% 26.5%,
       rgba(236, 208, 255, 0.64) 0%,
       rgba(161, 93, 207, 0.24) 59.67%,
       rgba(118, 49, 164, 0.208) 78.59%,
       rgba(86, 24, 128, 0.232) 100%
     );
-  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
-  filter: blur(5px);
-  backdrop-filter: blur(2px);
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+  }
 }

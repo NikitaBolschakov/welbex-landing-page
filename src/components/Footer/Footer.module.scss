@@ -1,126 +1,130 @@
-.footer {
-  min-width: 320px;
-  background-color: #1e1e1e;
-}
-
-.list_wrapper {
-  padding: 0 14px 30px;
-}
-
-.list_wrapper:nth-of-type(3) {
-  padding: 0 14px 50px;
-}
-
-.title_about {
-  padding: 40px 0 20px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #656566;
-}
-
-.title_menu {
-  padding: 0 0 20px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #656566;
-}
-
-.list_about {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #e4e5ea;
-}
-
-.list_menu {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #e4e5ea;
-  display: grid;
-  grid-template-columns: max-content max-content;
-  row-gap: 10px;
-  column-gap: 47px;
-}
-
-.item_about {
-  padding-bottom: 10px;
-}
-
-.item_about:hover {
-  opacity: 0.8;
-  transition: 0.1s;
-}
-
-.item_about:last-of-type {
-  padding-bottom: 0;
-}
-
-.item_menu {
-  padding-bottom: 0;
-}
-
-.item_menu:hover {
-  opacity: 0.8;
-  transition: 0.1s;
-}
-
-.item_number {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  padding-bottom: 10px;
-}
-
-.telegram {
-  background-image: url("../../vendors/images/telegram.svg");
-  width: 20px;
-  height: 17px;
-}
-
-.tel {
-  background-image: url("../../vendors/images/phone.svg");
-  width: 20px;
-  height: 19px;
-}
-
-.wa {
-  background-image: url("../../vendors/images/wa.svg");
-  width: 20px;
-  height: 20px;
-}
-
-.list_networks {
-  display: flex;
-  gap: 14px;
-}
-
-.copyright {
-  padding: 0 0 60px 15px;
-  p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+@media (max-width: 320px) {
+  .footer {
+    min-width: 320px;
+    background-color: #1e1e1e;
+  }
+  
+  .list_wrapper {
+    padding: 0 14px 30px;
+  }
+  
+  .list_wrapper:nth-of-type(3) {
+    padding: 0 14px 50px;
+  }
+  
+  .title_about {
+    padding: 40px 0 20px;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    padding-bottom: 5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
   }
-  a {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+  
+  .title_menu {
+    padding: 0 0 20px;
+    font-weight: 700;
     font-size: 12px;
     line-height: 15px;
-    text-decoration-line: underline;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
   }
-  a:hover {
+  
+  .list_about {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #e4e5ea;
+  }
+  
+  .list_menu {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #e4e5ea;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    row-gap: 10px;
+    column-gap: 47px;
+  }
+  
+  .item_about {
+    padding-bottom: 10px;
+  }
+  
+  .item_about:hover {
     opacity: 0.8;
     transition: 0.1s;
   }
+  
+  .item_about:last-of-type {
+    padding-bottom: 0;
+  }
+  
+  .item_menu {
+    padding-bottom: 0;
+  }
+  
+  .item_menu:hover {
+    opacity: 0.8;
+    transition: 0.1s;
+  }
+  
+  .item_number {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+  }
+  
+  .telegram {
+    background-image: url("../../vendors/images/telegram.svg");
+    width: 20px;
+    height: 17px;
+  }
+  
+  .tel {
+    background-image: url("../../vendors/images/phone.svg");
+    width: 20px;
+    height: 19px;
+  }
+  
+  .wa {
+    background-image: url("../../vendors/images/wa.svg");
+    width: 20px;
+    height: 20px;
+  }
+  
+  .list_networks {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .copyright {
+    padding: 0 0 60px 15px;
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      padding-bottom: 5px;
+    }
+    a {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-decoration-line: underline;
+    }
+    a:hover {
+      opacity: 0.8;
+      transition: 0.1s;
+    }
+  }
 }
+
+

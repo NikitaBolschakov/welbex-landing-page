@@ -1,4 +1,11 @@
 .app {
-  min-width: 320px;
   overflow: hidden;
+  background-color: black;
+}
+
+@media (max-width: 320px) {
+  .app {
+    min-width: 320px;
+    overflow: hidden;
+  }
 }
